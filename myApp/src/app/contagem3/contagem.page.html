@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Contagem <ion-icon name="alarm-sharp"></ion-icon>
+      <div class="bt">
+      <ion-button routerLink="/proteger" routerDirection="root"  color="primary" ><ion-icon name="arrow-undo-outline"></ion-icon></ion-button>
+    </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color ="primary">
+<ion-row class="ion-justify-content-center">
+  <ion-text>
+<h1>{{  time | async }}</h1>
+</ion-text>
+</ion-row>
+
+<ion-button *ngIf="state === 'stop' " expand="block" color="success" (click)="startTimer(5)"> <ion-spinner name="dots"></ion-spinner> Começar a marcar <ion-spinner name="dots"></ion-spinner> </ion-button>
+
+<ion-button *ngIf="state === 'start' " expand="block" color="danger" (click)="stopTimer()"> <ion-spinner name="dots"></ion-spinner> Parar a marcação <ion-spinner name="dots"></ion-spinner> </ion-button>
+</ion-card>
+<!---->
+<ion-card>
+  <ion-slides pager="true">
+    <ion-slide style="background:#ffffff" >
+      <img src="assets/imagem/12.jpg">
+    </ion-slide>
+    <ion-slide style="background:#ffffff" >
+      <img src="assets/imagem/13.jpg">
+    </ion-slide>
+    <ion-slide style="background:#ffffff" >
+      <img src="assets/imagem/14.jpg">
+    </ion-slide>
+  </ion-slides>
+</ion-card>
+
+<ion-card>
+  <ion-slides pager="true">
+    <ion-slide>
+      <h1>Lembre-se sempre de higienizar os objetos usados no dia a dia.</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Use sempre álcool gel.</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Na falta de álcool gel lave bem as mãos com água e sabão.</h1>
+    </ion-slide>
+  </ion-slides>
+</ion-card>
+<!--<ion-button expand="block" routerLink="/tabs" routerDirection="root"  color-rgb="#0594b4" >voltar</ion-button>-->
+</ion-content>
+
+

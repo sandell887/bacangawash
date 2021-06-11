@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Proteja-se Já! 
+      <ion-icon name="shield-checkmark" color="success"></ion-icon>
+      <div class="bt">
+        <ion-button routerLink="/tabs" routerDirection="root"  color="primary" ><ion-icon name="arrow-undo-outline"></ion-icon></ion-button>
+      </div>
+
+    </ion-title> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="secondary">
+    <img src="./assets/imagem/10.jpg" />
+    <ion-card-header>
+    </ion-card-header>
+    <ion-card-content>
+      Vamos iniciar a contagem? Aqui o aplicativo alertará você o momento certo em quem se deve lavar as mãos evitando o contágio.
+  <!--<ion-button expand="block" color-rgb="#0594b4">Começar a Prevenção </ion-button>-->
+  <ion-button expand="block" routerLink="/contagem" routerDirection="root"  color="primary"> <ion-spinner name="dots"></ion-spinner> iniciar contagem <ion-spinner name="dots"></ion-spinner> </ion-button>
+</ion-card-content>
+</ion-card>
+
+<!--card 2-->
+<ion-card color="secondary">
+  <img src="./assets/imagem/11.jpg" />
+  <ion-card-header>
+    <ion-card-subtitle>Combatemos juntos</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    Vejamos os métodos necessários para se proteger.
+    <ion-button expand="block" routerLink="/maneiras" routerDirection="root" color-rgb="#1dabb5"> <ion-spinner name="dots"></ion-spinner> Maneiras Corretas <ion-spinner name="dots"></ion-spinner> </ion-button>
+</ion-card-content>
+</ion-card>
+
+<!--<ion-button expand="block" routerLink="/tabs" routerDirection="root"  color="primary" >Voltar</ion-button>-->
+</ion-content>
